@@ -1,0 +1,39 @@
+# ==========================================
+# POWER PROGRESS
+# Robots.txt
+# ==========================================
+
+
+User-agent: *
+
+Allow: /
+
+
+
+# Sitemap
+
+Sitemap: https://powerprogressbd.com/sitemap.xml
+
+
+
+# Block unnecessary files
+
+
+Disallow: /css/
+
+Disallow: /js/
+
+Disallow: /images/temp/
+
+Disallow: /private/
+
+
+
+# Allow Important Assets
+
+
+Allow: /css/style.css
+
+Allow: /js/app.js
+
+Allow: /images/
