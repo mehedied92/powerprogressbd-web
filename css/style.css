@@ -2827,3 +2827,31 @@ body.dark .brand-card{
     }
 
 }
+
+
+#result{
+    margin-top:15px;
+    text-align:center;
+    font-size:15px;
+    font-weight:600;
+    min-height:22px;
+}
+
+.contact-form button:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border-color:#136CAD;
+    box-shadow:0 0 0 3px rgba(19,108,173,.15);
+    outline:none;
+}
