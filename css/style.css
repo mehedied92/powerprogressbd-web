@@ -3123,3 +3123,71 @@ body.dark .founder-avatar {
         grid-template-columns: 1fr;
     }
 }
+
+/* =====================================================
+   About Preview Section (Homepage)
+===================================================== */
+
+.about-preview {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.about-preview .container {
+    max-width: 1230px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-preview .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-preview .section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0B1220;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.about-preview .section-title p {
+    font-size: 19px;
+    color: #666666;
+    margin: 0;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 1.65;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.about-content .primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #136CAD;
+    color: #ffffff;
+    padding: 14px 36px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.35s ease;
+}
+
+.about-content .primary-btn:hover {
+    background: #F49221;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(19, 108, 173, 0.3);
+}
