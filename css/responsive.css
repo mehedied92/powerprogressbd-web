@@ -997,3 +997,50 @@ font-size:35px;
 
 
 }
+
+
+/* About Preview Responsive */
+
+@media (max-width: 992px) {
+    .about-preview {
+        padding: 70px 0;
+    }
+
+    .about-preview .section-title h2 {
+        font-size: 34px;
+    }
+
+    .about-preview .section-title p {
+        font-size: 17px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-preview {
+        padding: 55px 0;
+    }
+
+    .about-preview .section-title h2 {
+        font-size: 28px;
+    }
+
+    .about-preview .section-title p {
+        font-size: 16px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .about-content .primary-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 13px 28px;
+        font-size: 15px;
+    }
+}
