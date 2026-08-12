@@ -1409,7 +1409,9 @@ Part 21.1
     padding:120px 0 90px;
 
     background: linear-gradient(135deg, var(--primary-color), #0b4d80);
+
     text-align:center;
+    color: white;
 
 }
 
@@ -2345,6 +2347,34 @@ body.dark .value-card i{
 
 
 
+/* CTA Buttons - Balanced Style */
+.contact-cta .primary-btn {
+    background: #ffffff;
+    color: var(--primary-color);
+    border: 2px solid #ffffff;
+}
+
+.contact-cta .primary-btn:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.contact-cta .secondary-btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.contact-cta .secondary-btn:hover {
+    background: #ffffff;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+
+
 
 
 /* =====================================================
@@ -2828,7 +2858,6 @@ body.dark .brand-card{
 
 }
 
-
 #result{
     margin-top:15px;
     text-align:center;
@@ -2854,4 +2883,243 @@ body.dark .brand-card{
     border-color:#136CAD;
     box-shadow:0 0 0 3px rgba(19,108,173,.15);
     outline:none;
+}
+
+/* =====================================================
+   Meet Our Founder
+===================================================== */
+
+.founder-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.founder-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 50px 45px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: var(--transition);
+    border-top: 5px solid var(--primary-color);
+}
+
+.founder-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.founder-avatar {
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(19, 108, 173, 0.12), rgba(244, 146, 33, 0.12));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgba(19, 108, 173, 0.2);
+}
+
+.founder-avatar i {
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.founder-content h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.founder-role {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.founder-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+
+.founder-content .btn {
+    margin-top: 5px;
+}
+
+/* Dark Mode */
+body.dark .founder-card {
+    background: #1e293b;
+}
+
+body.dark .founder-content h3 {
+    color: #ffffff;
+}
+
+body.dark .founder-content p {
+    color: #cbd5e1;
+}
+
+body.dark .founder-avatar {
+    background: linear-gradient(135deg, rgba(19, 108, 173, 0.2), rgba(244, 146, 33, 0.15));
+    border-color: rgba(19, 108, 173, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .founder-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+        gap: 25px;
+    }
+
+    .founder-avatar {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+    }
+
+    .founder-avatar i {
+        font-size: 50px;
+    }
+
+    .founder-content h3 {
+        font-size: 24px;
+    }
+
+    .founder-content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .founder-card {
+        padding: 30px 22px;
+    }
+
+    .founder-content h3 {
+        font-size: 22px;
+    }
+}
+
+/* =====================================================
+   FAQ Accordion Section
+===================================================== */
+
+.faq-badge {
+    display: inline-block;
+    background: rgba(244, 146, 33, 0.12);
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.faq .section-title h2 span {
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.faq-accordion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.06);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,.10);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 22px 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-question h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 0;
+    line-height: 1.4;
+    transition: .3s;
+}
+
+.faq-item.active .faq-question h3 {
+    color: var(--secondary-color);
+}
+
+.faq-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background: rgba(244, 146, 33, 0.12);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.faq-item.active .faq-icon {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease, padding .35s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-answer p {
+    padding: 0 24px 22px;
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .faq-accordion {
+        grid-template-columns: 1fr;
+    }
 }
